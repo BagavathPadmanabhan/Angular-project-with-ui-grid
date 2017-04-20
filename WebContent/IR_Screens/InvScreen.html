@@ -1,0 +1,43 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+  <style type="text/css">
+	.grid {
+	width: 1250px;
+	height: 500px;
+	}
+	
+    .grid .ui-grid-header-cell .ui-grid-cell-contents{
+		text-align:center;
+	}
+	
+	.left-align {
+    	text-align: left;
+	}
+	.center-align {
+    	text-align: center;
+	}
+	.right-align {
+    	text-align: right;
+	}
+    
+</style>
+  	<script src="../js/angular.js" type="text/javascript"></script>
+  	<script src="../js/ui-grid.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../css/ui-grid.css" type="text/css"> 
+ 
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+  <body>
+
+<div ng-controller="MainCtrl">
+  <div id="fundgrid" ui-grid="fundContents_grid" ui.grid.selection  ui-grid-pagination class="grid"></div>
+  <div id="discPerfgrid" ui-grid="discPerfcontents_grid" ui.grid.selection  ui-grid-pagination class="grid" ></div>
+  <div id="annualPerfgrid" ui-grid="annualPerfContents_grid" ui.grid.selection  ui-grid-pagination class="grid" ></div>
+</div>
+
+
+    <script src="InvGrid.js"></script>
+  </body>
+</html>
